@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>chaichawat piyatarathibet    </title>
+    <style>
+       * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: arial;
+       }
+       * a {
+          text-decoration: none;
+       }
+       * li {
+          list-style: none;
+       }
+       .container {
+          min-height: 120vh;
+          padding-bottom: 50px;
+          margin: 0 auto;
+          position: relative;
+       }
+       .bg {
+          position: relative;
+          width: 100%;
+          height: 100%;
+       }
+       .bg::after {
+          content: "";
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          z-index: -1;
+          filter: brightness(45%);
+          background-image: url("https://media.cnn.com/api/v1/images/stellar/prod/230210161917-01-japan-never-traveler-culture-tokyo.jpg?c=16x9&q=h_653,w_1160,c_fill/f_webp");
+          background-size: cover;
+          background-position: center;
+       }
+       .navBar {
+          display: flex;
+          width: 85%;
+          justify-content: space-between;
+          margin: 0 auto;
+          align-items: center;
+          height: 15vh;
+       }
+       .navBar ul {
+          display: flex;
+          align-items: center;
+       }
+       .navBar ul li {
+          padding: 0 25px;
+       }
+       .navBar ul li a {
+          font-size: 1rem;
+          color: #fff;
+          font-weight: 400;
+          letter-spacing: 1.5px;
+       }
+       .navBar .logo a {
+          font-size: 2.3rem;
+          color: #fff;
+       }
+       .content {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 85%;
+          position: absolute;
+          top: 60%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          align-items: center;
+       }
+       .BAS {
+          color: #fff;
+          padding: 25px;
+       }
+       .card {
+          display: grid;
+          grid-template-columns: auto auto;
+          grid-gap: 20px;
+       }
+       .card h2 {
+          color: #fff;
+          position: absolute;
+          bottom: 15px;
+          left: 20px;
+          font-size: 1.6rem;
+          letter-spacing: 1px;
+       }
+       .card .box1,
+       .box2,
+       .box3,
+       .box4 {
+          width: 90%;
+          height: 220px;
+          background-position: center;
+          background-size: cover;
+          position: relative;
+          border-radius: 25px;
+          cursor: pointer;
+       }
+       .box1 {
+          background-image: url("https://scontent.fbkk7-3.fna.fbcdn.net/v/t39.30808-6/458396197_1201303011139358_7286479180092732321_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=RSaJUEwU9jMQ7kNvgFucH0W&_nc_ht=scontent.fbkk7-3.fna&_nc_gid=ADAeec5-9KmhsmR5xSRR7ns&oh=00_AYBMqZS5Ybi9tXDkfRimE0ZKGJm2IfQZStqOHgF_wyDC1Q&oe=670BCEBD");
+       }
+       .box2 {
+          background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRswqEamPNinYJQPkI-kATBwxyVBk9Wr3QFvA&s");
+       }
+       .box3 {
+          background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsizL3GmOOls-Um175U8foMetWo-0rrXxyQQ&s");
+       }
+       .box4 {
+          background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF4_kQvydy7lEk42oO3aZ_kapnourz_TZM9Q&s");
+       }
+       .BAS h2 {
+          font-size: 2rem;
+          letter-spacing: 2.8px;
+       }
+       .text {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+       }
+       .txt h1 {
+          font-size: 7rem;
+       }
+       .BAS p {
+          opacity: 0.4;
+       }
+       .tnx h2 i {
+          color: #fd7e13;
+       }
+       .card div {
+          transition: 0.5s;
+       }
+       .card div:hover {
+          transition: 0.3s;
+          transform: translateY(-10px);
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+       }
+    </style>
+</head>
+<body>
+
+<div class="container bg">
+    <div class="navBar">
+        <div class="logo">
+            <a href="#">
+                <i class="fas fa-suitcase-rolling"></i>
+            </a>
+        </div>
+        <ul>
+            <li><a href="#">ประวัติส่วนตัว</a></li>
+            <li><a href="#">ข้อมูลการติดต่อ</a></li>
+            <li><a href="#">ประวัติการศึกษา</a></li>
+            <li><a href="#">ความสามาถที่่มี</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="BAS" style="width:50%;">
+            <div class="tnx">
+                <h2><i class="fas fa-map-marker-alt"></i> BAS</h2>
+            </div>
+            <div class="txt">
+                <h1>CHAI</h1>
+                <h1>CHAWAT</h1>
+            </div>
+            <p>แนะนำตนเอง</p>
+        </div>
+        <div class="card" style="width:50%;">
+            <a href="http://127.0.0.1:5500/index1.html" target="_blank">
+                <div class="box1">
+                    <h2>ประวัติส่วนตัว</h2>
+                </div>
+            </a>
+            <a href="http://127.0.0.1:5500/index2.html" target="_blank">
+                <div class="box2">
+                    <h2>ข้อมูลการติดต่อ</h2>
+                </div>
+            </a>
+            <a href="http://127.0.0.1:5500/index3.html" target="_blank">
+                <div class="box3">
+                    <h2>ประวัติการศึกษา-ความสามารถที่มี</h2>
+                </div>
+            </a>
+            <a href="http://127.0.0.1:5500/index4.html" target="_blank">
+                <div class="box4">
+                    <h2>ผลงาน</h2>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
